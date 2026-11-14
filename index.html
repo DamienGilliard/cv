@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
     @media (max-width: 800px) {
         img.profile {
@@ -6,10 +10,10 @@
             margin: 0;
         }
     }
-    h3 {
-    font-size: clamp(1.5rem, 5vw, 1.5rem);
-    }
+    body.mobile h3 { font-size: 2.0rem; }
 </style>
+</head>
+<body>
 <p>
     <h1>
         Hi, this is Damien Gilliard's minimal online CV.
@@ -44,3 +48,13 @@
     <p><img src="https://external-content.duckduckgo.com/ip3/www.linkedin.com.ico" height="12"> <a href="https://www.linkedin.com/in/damien-gilliard-ba9619119/">LinkedIn</a></p>
     <p><img src="https://external-content.duckduckgo.com/ip3/github.com.ico" height="12"> <a href="https://github.com/DamienGilliard">GitHub</a></p>
 </footer>
+
+<script>
+    if (/Mobi|Android/i.test(navigator.userAgent)
+        || window.matchMedia('(pointer: coarse)').matches
+        || navigator.maxTouchPoints > 0) {
+        document.body.classList.add('mobile');
+    }
+</script>
+</body>
+</html>
