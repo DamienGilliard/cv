@@ -3,7 +3,9 @@
         img.profile {
             position: static;
             display: block;
-            margin: 0 auto;
+            width: 200px;
+            max-width: 90vw;
+            margin: 0;
         }
     }
 </style>
@@ -19,23 +21,16 @@
     My PhD research focuses on design of roundwood construction systems.
 </p>
 <br>
-<img src="./assets/img/profile.jpg" class="profile" style="position: absolute; left: 550px; width: min(200px, 50vw);">
-
-<h3>
-    <p>
-        <br>
+<div style="display: flex; align-items: center; gap: 24px;">
+    <h3 style="margin: 0;">
         🪵 <a href="./pages/education.html">Education</a><br>
         🪓 <a href="./pages/publications.html">List of publications</a><br>
         🪚 <a href="./pages/experience.html">Experience</a><br>
-        💥 <a href="./pages/data.html">Some data produced</a><br>
-        <br>
-        <br>
-        <br>
-        <br>
-    </p>
-</h3>
+        💥 <a href="./pages/data.html">Some data produced</a>
+    </h3>
+    <img src="./assets/img/profile.jpg" class="profile" style="width: min(200px, 35vw); height: auto; flex-shrink: 0; border-radius: 5%; margin-left: 300px;">
 
-
+</div>
 
 <footer>
 
